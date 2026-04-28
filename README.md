@@ -33,24 +33,22 @@
 ## 📂 프로젝트 구조 (Project Structure)
 
 ```text
-23. langchain-rag-enterprise-chatbot/
-├─ data/                                     # 모든전자 사내 문서 5종
-│  ├─ company_profile.txt                    # 회사 개요·연혁·해외 거점 (TXT)
-│  ├─ tech_quality.json                      # R&D / 품질 관리 / 인증 (JSON, 단일 객체)
-│  ├─ products_services.jsonl                # 제품/서비스 6종 (JSONL, 한 줄당 한 제품)
-│  ├─ customer_satisfaction_metric.csv       # 고객사 6곳 OTD/PPM/거래액 (CSV)
-│  └─ recruitment_process_guide.pdf          # 채용 4단계 절차 가이드 (PDF, 멀티 페이지)
+├─ data/                                       # 모든전자 사내 문서 5종
+│  ├─ company_profile.txt                      # 회사 개요·연혁·해외 거점 (TXT)
+│  ├─ tech_quality.json                        # R&D / 품질 관리 / 인증 (JSON, 단일 객체)
+│  ├─ products_services.jsonl                  # 제품/서비스 6종 (JSONL, 한 줄당 한 제품)
+│  ├─ customer_satisfaction_metric.csv         # 고객사 6곳 OTD/PPM/거래액 (CSV)
+│  └─ recruitment_process_guide.pdf            # 채용 4단계 절차 가이드 (PDF, 멀티 페이지)
 ├─ results/
-│  ├─ fig_01_pipeline_overview.png           # RAG 파이프라인 전체 흐름
-│  ├─ fig_02_document_stats.png              # 5종 문서 — 파일 크기 / Document 수 / 청크 수
-│  ├─ fig_03_chunk_length_distribution.png   # 청크 길이 분포 히스토그램
-│  ├─ fig_04_tool_routing_map.png            # 질문 유형 → 호출 Tool 라우팅 맵
-│  ├─ fig_05_topk_retrieval.png              # 샘플 질문 → Top-2 청크 검색 결과
-│  ├─ fig_06_collection_preview.png          # 5개 컬렉션 내용 미리보기 카드
-│  └─ rag_run_log.json                       # 실행 통계 + 챗봇 Q&A 로그
-├─ chroma_store/                             # ChromaDB 영구 저장 폴더 (실행 시 자동 생성, gitignore)
+│  ├─ fig_01_pipeline_overview.png             # RAG 파이프라인 전체 흐름
+│  ├─ fig_02_document_stats.png                # 5종 문서 — 파일 크기 / Document 수 / 청크 수
+│  ├─ fig_03_chunk_length_distribution.png     # 청크 길이 분포 히스토그램
+│  ├─ fig_04_tool_routing_map.png              # 질문 유형 → 호출 Tool 라우팅 맵
+│  ├─ fig_05_topk_retrieval.png                # 샘플 질문 → Top-2 청크 검색 결과
+│  ├─ fig_06_collection_preview.png            # 5개 컬렉션 내용 미리보기 카드
+│  └─ rag_run_log.json                         # 실행 통계 + 챗봇 Q&A 로그
 ├─ src/
-│  └─ rag_pipeline.py                        # 통합 실행 스크립트 (mode 인자로 단계별 실행)
+│  └─ rag_pipeline.py                          # 통합 실행 스크립트
 ├─ .gitignore
 ├─ README.md
 └─ requirements.txt
