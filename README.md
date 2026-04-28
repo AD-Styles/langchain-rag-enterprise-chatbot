@@ -60,7 +60,7 @@
 
 ### 1. RAG 파이프라인 전체 흐름
 
-| RAG 파이프라인 (도식) |
+| RAG 파이프라인 (도식화) |
 | :---: |
 | ![pipeline](results/fig_01_pipeline_overview.png) |
 
