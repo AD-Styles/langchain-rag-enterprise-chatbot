@@ -85,7 +85,7 @@
 
 ### 4. 실행 방법
 
-| 명령어 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; | 동작 &emsp;&emsp;&emsp;&emsp; | LLM/임베딩 호출 |
+| 명령어 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; | 동작 &emsp;&emsp;&emsp;&emsp; | LLM/임베딩 <br>호출 |
 | :--- | :--- | :---: |
 | `python src/rag_pipeline.py --mode stats` | 5종 문서의 파일 크기·문서 수·청크 수 통계만 출력 | ✗ |
 | `python src/rag_pipeline.py --mode build` | 5개 컬렉션 생성 + 임베딩 + ChromaDB 영구 저장 | ✓ |
