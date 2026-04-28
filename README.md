@@ -66,13 +66,13 @@
 
 ### 2. 5종 문서별 처리 방법
 
-| 문서 종류 &emsp;&emsp;&emsp;&emsp; | 파일 &emsp; | 사용 Loader &emsp; | 청크 분할 | 이유 &emsp;&emsp;&emsp;&emsp; |
+| 문서 종류 &emsp;&emsp;&emsp;&emsp; | 파일 &emsp; | 사용 Loader &emsp; | 청크 분할 | 이유 &emsp;&emsp;&emsp;&emsp;&emsp; |
 | :---: | :--- | :--- | :---: | :--- |
-| 회사 개요 | `company_profile.txt` | `TextLoader` | ✓ | 줄글이라 길이가 길어 청크 단위로 나눠야 검색 정확도가 올라감 |
-| 기술·품질 | `tech_quality.json` | `JSONLoader`<br/>(`json_lines=False`) | ✗ | 한 덩어리 JSON 객체 — 자르면 의미가 깨지므로 통째로 임베딩 |
+| 회사 개요 | `company_profile.txt` | `TextLoader` | ✓ | 줄글이라 길이가 길어 청크 단위로 나눠야 검색 정확도가 <br>올라감 |
+| 기술·품질 | `tech_quality.json` | `JSONLoader`<br/>(`json_lines=False`) | ✗ | 한 덩어리 JSON 객체 — 자르면 의미가 깨지므로 통째로 <br>임베딩 |
 | 제품·서비스 | `products_services.jsonl` | `JSONLoader`<br/>(`json_lines=True`) | ✗ | 한 줄당 한 제품 — 이미 잘게 나뉘어 있어 추가 분할 불필요 |
 | 고객 만족도 | `customer_satisfaction_metric.csv` | `CSVLoader` | ✓ | CSV 한 줄을 한 Document로 받지만, 짧은 줄 여러 개를 묶어 청크로 만듦 |
-| 채용 가이드 | `recruitment_process_guide.pdf` | `PyMuPDFLoader` | ✓ | 페이지별로 길이가 다른 PDF — 청크로 잘라 검색 단위 통일 |
+| 채용 가이드 | `recruitment_process_guide.pdf` | `PyMuPDFLoader` | ✓ | 페이지별로 길이가 다른 PDF: 청크로 잘라 검색 단위 통일 |
 
 ### 3. 핵심 설계 포인트
 
