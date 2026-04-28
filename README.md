@@ -33,7 +33,6 @@ LLM(언어 모델)은 학습이 끝난 시점까지의 정보만 알고, 그 이
 ## 📂 프로젝트 구조 (Project Structure)
 
 ```text
-23. langchain-rag-enterprise-chatbot/
 ├─ data/                                     # 모든전자 사내 문서 5종
 │  ├─ company_profile.txt                    # 회사 개요·연혁·해외 거점 (TXT)
 │  ├─ tech_quality.json                      # R&D / 품질 관리 / 인증 (JSON, 단일 객체)
