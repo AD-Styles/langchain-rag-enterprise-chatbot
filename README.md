@@ -23,7 +23,7 @@
 | 핵심 역량 &emsp;&emsp;&emsp;&emsp;&emsp; | 상세 목표 |
 | :--- | :--- |
 | **다양한 형식 문서 다루기** | 5가지 형식(TXT/JSON/JSONL/CSV/PDF)을 각각 알맞은 LangChain Loader로 읽어, 모두 같은 `Document` 객체로 통일 |
-| **청크 분할 전략** | 일반 텍스트는 `RecursiveCharacterTextSplitter(chunk_size=500)`로 잘게 자르고, JSON/JSONL 같은 구조화 데이터는 통째로 보존하는 두 가지 전략을 분기 처리 |
+| **청크 분할 전략** | 일반 텍스트는 `RecursiveCharacterTextSplitter(chunk_size=500)`로 잘게 자르고, <br/>JSON/JSONL 같은 구조화 데이터는 통째로 보존하는 두 가지 전략을 분기 처리 |
 | **벡터 DB 컬렉션 분리** | 컬렉션을 1개로 합치지 않고 **소스별 5개**로 나눠, 각 컬렉션에 1:1로 매칭되는 검색 함수를 자동 생성 |
 | **임베딩/LLM 서버 분리** | 임베딩 전용 프록시(`EMBEDDING_URL`)와 LLM 프록시(`BASE_URL`)를 별도 환경 변수로 두어, 운영 시 두 서버를 따로 관리할 수 있게 설계 |
 | **자연어 라우팅** | 시스템 프롬프트에 5개 함수의 역할을 자세히 적어, 질문 주제에 맞는 함수 하나를 LLM이 스스로 고르도록 유도 |
