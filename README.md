@@ -20,7 +20,7 @@
 
 ## 🎯 핵심 목표 (Motivation)
 
-| 핵심 역량 &emsp;&emsp;&emsp; | 상세 목표 |
+| 핵심 역량 &emsp;&emsp;&emsp;&emsp; | 상세 목표 |
 | :--- | :--- |
 | **다양한 형식 문서 다루기** | 5가지 형식(TXT/JSON/JSONL/CSV/PDF)을 각각 알맞은 LangChain Loader로 읽어, 모두 같은 `Document` 객체로 통일 |
 | **청크 분할 전략** | 일반 텍스트는 `RecursiveCharacterTextSplitter(chunk_size=500)`로 잘게 자르고, JSON/JSONL 같은 구조화 데이터는 통째로 보존하는 두 가지 전략을 분기 처리 |
