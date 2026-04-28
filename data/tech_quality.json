@@ -1,0 +1,35 @@
+{
+  "technical_and_quality_capabilities": {
+    "rnd_organization": {
+      "name": "융합 기술 연구소 (CTI: Convergence Technology Institute)",
+      "establishment_year": 2017,
+      "main_research_areas": [
+        "전력 모듈 열 관리 및 패키징 효율성 최적화",
+        "자율주행/로봇용 고신뢰성 센서 인터페이스 개발",
+        "소재 기반의 부품 수명 예측 및 진단 시스템 구축"
+      ],
+      "major_equipment": "3D-X선 검사기, 열 충격 시험기, 고속 환경 챔버"
+    },
+    "quality_management_system": {
+      "process_standard": "APQP(Advanced Product Quality Planning) 전사 표준화",
+      "defect_reduction_initiative": "6시그마 기반의 '퍼펙트 클린 존' 프로젝트 운영",
+      "supplier_rating_criteria": [
+        "납기 준수율 (OTD)",
+        "품질 지수 (PPM)",
+        "지속 가능성 평가 (CSR)"
+      ],
+      "traceability_level": "개별 부품 로트/시리얼 번호 단위의 10년 추적 보장"
+    },
+    "certifications_and_compliance": {
+      "automotive_standard": "IATF 16949 인증 (2025년 획득 목표)",
+      "environmental_standard_expanded": "IEC 62474 (재료 선언) 준수",
+      "safety_certifications": "UL(Underwriters Laboratories) 승인 다수 품목 보유",
+      "future_compliance_focus": "미국 FIPS 140-3(암호화 모듈 보안) 관련 기술 검토 착수"
+    },
+    "engineering_support_detail": {
+      "FAE_specialization": "전장(Automotive Electronics), 신재생 에너지(Renewable Energy)",
+      "simulation_tools": "Ansys, Cadence 등 유한요소 해석(FEA) 소프트웨어 활용 설계 지원",
+      "customization_lead_time": "단순 커스터마이징 4주 이내 샘플 제공 목표"
+    }
+  }
+}

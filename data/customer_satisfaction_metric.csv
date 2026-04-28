@@ -1,0 +1,7 @@
+customer_id,industry,delivery_otd_rate,quality_ppm,annual_spend_krw,last_audit_score,primary_product_category
+C_AUTO_001,자동차 전장,99.8,150,45000000000,92.5,커넥터/하네스
+C_ROBO_005,로보틱스,97.2,280,18000000000,88.1,전력반도체 모듈
+C_IND_012,산업 자동화,99.9,50,32000000000,95.8,센서 및 스위치
+C_COMM_003,통신/IoT,96.5,410,9500000000,85.0,수동소자(MLCC)
+C_CLEA_020,친환경 에너지,98.5,110,25000000000,90.3,파워서플라이 모듈
+C_SEMI_010,반도체 장비,99.5,80,12000000000,94.0,특수 환경 패키징
