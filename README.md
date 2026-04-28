@@ -20,7 +20,7 @@
 
 ## 🎯 핵심 목표 (Motivation)
 
-| 핵심 역량 &emsp;&emsp;&emsp;&emsp;&emsp; | 상세 목표 |
+| <br/>핵심 역량 &emsp;&emsp;&emsp;&emsp;&emsp; | 상세 목표 |
 | :--- | :--- |
 | **다양한 형식 문서 다루기** | 5가지 형식(TXT/JSON/JSONL/CSV/PDF)을 각각 알맞은 LangChain Loader로 읽어, 모두 같은 `Document` 객체로 통일 |
 | **청크 분할 전략** | 일반 텍스트는 `RecursiveCharacterTextSplitter(chunk_size=500)`로 잘게 자르고, <br>JSON/JSONL 같은 구조화 데이터는 통째로 보존하는 두 가지 전략을 분기 처리 |
@@ -66,7 +66,7 @@
 
 ### 2. 5종 문서별 처리 방법
 
-| 문서 종류 &emsp;&emsp;&emsp;&emsp; | 파일 &emsp; | 사용 Loader &emsp; | 청크 분할 | 이유 &emsp;&emsp;&emsp;&emsp; |
+| <br/>문서 종류 &emsp;&emsp;&emsp;&emsp; | 파일 &emsp; | 사용 Loader &emsp; | 청크 분할 | 이유 &emsp;&emsp;&emsp;&emsp; |
 | :---: | :--- | :--- | :---: | :--- |
 | 회사 개요 | `company_profile.txt` | `TextLoader` | ✓ | 줄글이라 길이가 길어 청크 단위로 나눠야 검색 정확도가 <br>올라감 |
 | 기술·품질 | `tech_quality.json` | `JSONLoader`<br/>(`json_lines=False`) | ✗ | 한 덩어리 JSON 객체 — 자르면 의미가 깨지므로 통째로 <br>임베딩 |
